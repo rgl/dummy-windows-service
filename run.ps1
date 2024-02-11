@@ -53,7 +53,8 @@ if ($result -like '* STATE *') {
 
 Write-Host "Getting the $serviceName service logs..."
 Start-Sleep -Seconds 2
-Get-EventLog Application -Source $serviceName
+Get-EventLog Application -Source $serviceName `
+    | Format-List
 
 Write-Host "Stopping the $serviceName service..."
 $result = sc.exe stop $serviceName
