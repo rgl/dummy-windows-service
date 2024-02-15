@@ -18,12 +18,8 @@ Install, run, and uninstall the service and respective account:
 
 # Development
 
-Install the dependencies:
-
-```bash
-go get -u github.com/kardianos/service
-go get -u golang.org/x/sys/windows
-```
+Install [Go](https://go.dev/dl/) and other dependencies referred in the
+[Makefile](Makefile) file.
 
 Build:
 
